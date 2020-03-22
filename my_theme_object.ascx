@@ -1,0 +1,2 @@
+<%@ Control language="C#" Inherits="starter_theme_object.my_theme_object" AutoEventWireup="true"  Codebehind="my_theme_object.ascx.cs" %>
+<asp:Label ID="lblMessage" runat="server" CssClass="h2"></asp:Label>

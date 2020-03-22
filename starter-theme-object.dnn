@@ -1,0 +1,45 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="starter-theme-object" type="SkinObject" version="00.00.01">
+      <friendlyName>starter-theme-object</friendlyName>
+      <description>A starter Theme Object project by and for the DNN Comnmunity</description>
+      <iconFile />
+      <owner>
+        <name>DNN Community</name>
+        <organization>DNN Community</organization>
+        <url>https://dnncommunity.org</url>
+        <email></email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">09.05.00</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/ThemeObjects/starter-theme-object</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="SkinObject">
+          <moduleControl>
+            <controlKey>my_theme_object</controlKey>
+            <controlSrc>DesktopModules/ThemeObjects/starter-theme-object/my-theme-object.ascx</controlSrc>
+            <supportsPartialRendering>False</supportsPartialRendering>
+          </moduleControl>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>starter-theme-object.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
